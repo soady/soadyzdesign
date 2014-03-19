@@ -1,0 +1,142 @@
+/* CSS reset */
+*{margin: 0; padding: 0;}*{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing: border-box;}*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing: border-box;}*:before{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing: border-box;}
+table {border-collapse:collapse;border-spacing:0;}fieldset,img {border:0;}address,caption,cite,code,dfn,th,var {font-style:normal;font-weight:normal;}
+code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}ol,ul {list-style:none;}a{text-decoration: none; color: inherit;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}
+caption,th {text-align:left;}h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}q{quotes:\201C \201D \2018 \2019;}q:before,q:after {content:'';}
+abbr,acronym { border:0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}pre{white-space:pre-wrap;}small{font-size:80%;}
+sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}
+img{border:0;}svg:not(:root){overflow:hidden;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}
+button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}
+button[disabled],html input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}
+input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}
+textarea{overflow:auto;vertical-align:top;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+.clearfix:before,.clearfix:after{content:" ";display:table;}.clearfix:after{clear:both;}.clearfix{zoom:1;}
+/* Predefinisane klase*/
+.fl{float: left;}.fr{float: right}.cb{clear: both}.cl{clear: left}.cr{clear: right;}
+.tal{text-align: left;}.tac{text-align: center;}.tar{text-align: right;}
+.p5{padding: 5px}.p10{padding: 10px}.p10nt{padding: 0 10px}.p10ns{padding: 10px 0}.db{display: block}
+.ttu {text-transform: uppercase;} .fwb{font-weight: bold;} .soady{font-family: soady;}
+html, body {height: 100%;}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+@font-face {
+    font-family: 'soady';
+    src: url('fonts/starstruck-webfont.eot');
+    src: url('fonts/starstruck-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/starstruck-webfont.woff') format('woff'),
+         url('fonts/starstruck-webfont.ttf') format('truetype'),
+         url('fonts/starstruck-webfont.svg#starstruckregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'zeljko';
+    src: url('fonts/tommy___-webfont.eot');
+    src: url('fonts/tommy___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/tommy___-webfont.woff') format('woff'),
+         url('fonts/tommy___-webfont.ttf') format('truetype'),
+         url('fonts/tommy___-webfont.svg#tommy_hilfiger_afregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'opusteno';
+    src: url('fonts/keepcalm-medium-webfont.eot');
+    src: url('fonts/keepcalm-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/keepcalm-medium-webfont.woff') format('woff'),
+         url('fonts/keepcalm-medium-webfont.ttf') format('truetype'),
+         url('fonts/keepcalm-medium-webfont.svg#keep_calmmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {font-family: 'opusteno';}
+.wrapper {max-width: 1000px; margin: 0px auto;}
+#wrap {min-height: 100%;}
+#main {overflow: none; padding-bottom: 300px;}
+header {
+	height: 370px;
+	width: 100%;
+	border-bottom: 17px solid rgb(191,31,58);
+}
+#first-line {
+	background: rgb(76,76,76);
+	height: 260px;
+	width: 2px;
+}
+#sec-line {
+	background: rgb(76,76,76);
+	height: 2px;
+	width: 2px;
+	margin-top: 258px;
+}
+#logo {
+	margin-top: 20px;
+	width: 153px;
+	height: auto;
+	margin-left: 20px;
+}
+header #logo-txt {
+	font-family: 'zeljko';
+	margin-top: 77px;
+	margin-left: 10px;
+	font-size: 40px;
+	letter-spacing: -3px;
+	line-height: 38px;
+}
+#logo-txt .red-letter {
+	color: rgb(191,31,58);
+	font-weight: bold;
+	letter-spacing: -15px;
+	position: relative;
+	top: 5px;
+	left: -4px;
+	z-index: -1;
+}
+nav {position: relative;	top: -21px;	left: 120px;}
+nav ul li {display: inline; margin-right: 30px;}
+nav ul li a {text-decoration: underline;}
+nav ul li a.active {text-decoration: none; color: rgb(191,31,58); position: relative; top: 3px;}
+nav ul li a:hover {position: relative; top: 3px; text-decoration: none;}
+
+.slider {position: relative; top: 250px;}
+.slide-img {
+	width: 950px;
+	height: auto;
+	position: absolute;
+	left: 25px;
+}
+.tackice .levo, .tackice .desno {
+	background: rgb(139,1,26);
+	border-radius: 100%;
+	z-index: 1000;
+	position: absolute;
+	top: 480px;
+}
+.tackice .levo {left: 20px;}
+.tackice .desno {left: 910px;}
+
+.hire {
+	position: relative;
+	top: 1000px;
+	margin: 0px auto 200px;
+	height: 45px;
+	padding: 10px;
+	width: 200px;
+	vertical-align: middle;
+	background: rgb(0,144,105);
+	color: rgb(255,255,255);
+}
+/*
+#back-img {
+	opacity: .5;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: -1000;
+}*/
+#footer1 {
+	height: 50px;
+	color: rgb(3,7,25);
+}
