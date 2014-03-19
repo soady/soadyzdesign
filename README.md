@@ -1,4 +1,0 @@
-soadyzdesign
-============
-
-soady'z dezign
